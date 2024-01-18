@@ -6,10 +6,8 @@ setup(
     author="oivalian",
     packages=find_packages(),
     install_requires=[
-        "psutil",
-        "platform",
-        "py-cpuinfo",
-        "GPUtil",
-        "os",
+        "psutil>=5.9.7",  # Specify a minimum version if needed
+        "py-cpuinfo>=9.0.0",  # Specify a minimum version if needed
+        "GPUtil>=1.4.0",  # Specify a minimum version if needed
     ],
 )
