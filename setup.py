@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="sysinf",
+    name="sysinf.py",
     version="1.0.0",
     author="oivalian",
     packages=find_packages(),
