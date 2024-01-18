@@ -8,8 +8,6 @@ ___
 
 SysInfo is dependant on the following libraries:
 
-1) ```platform```
-2) ```os```
 3) ```psutil```
 4) ```py-cpuinfo```
 5) ```GPUtil```
