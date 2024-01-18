@@ -10,5 +10,6 @@ setup(
         "platform",
         "py-cpuinfo",
         "GPUtil",
+        "os",
     ],
 )
