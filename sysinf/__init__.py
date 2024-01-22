@@ -1,3 +1,3 @@
-from . import sysinf
+from sysinf.sysinf import SysInf
 
-__all__ = [sysinf]
+__all__ = ["SysInf"]
