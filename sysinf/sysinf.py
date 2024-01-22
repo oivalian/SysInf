@@ -21,7 +21,7 @@ class SysInf:
         return brand
 
     def cpucores(self):
-        cores =  [f"Core #{core}: {perc}%{os.linesep}"
+        cores =  [f"Core #{core}: {perc}%\n"
                 for core, perc in enumerate(psutil.cpu_percent(percpu=True, interval=1))]
         return "".join(cores)
 
@@ -63,7 +63,7 @@ class SysInf:
             drive_info = (f"{drive_list}\nTotal Size: {drive_total} GB"
                           f"\nUsed: {drive_used} GB\nFree: {drive_free} GB")
             drive_info_list.append(drive_info)
-            return "".join(drive_info_list)
+        return "\n\n".join(drive_info_list)
 
 # system
     def sysinfo(self):
@@ -86,9 +86,9 @@ class SysInf:
                              f"\nCurrent Temp: {gpu.temperature:.0f}°C"
                              f"\nUsed: {gpu_used:.0f} GB\n"
                              f"Free: {gpu_free:.0f} GB")
-                gpu_info = f"{gpu_name}\n{gpu_stats}\n"
+                gpu_info = f"{gpu_name}\n{gpu_stats}"
                 gpus.append(gpu_info)
         else:
             print("ERROR: No GPU detected")
-        listgpus = "\n\n".join(gpus)
+        listgpus = "".join(gpus)
         return listgpus
