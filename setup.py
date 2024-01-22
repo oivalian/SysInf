@@ -1,13 +1,17 @@
 from setuptools import setup, find_packages
 
+VERSION = "1.0.0"
+DESCRIPTION = "A small package that simplfies system information into pre-defined strings."
+
 setup(
-    name="sysinf",
-    version="1.0.0",
+    name="sysinfo",
+    version=VERSION,
+    description=DESCRIPTION,
     author="oivalian",
     packages=find_packages(),
     install_requires=[
-        "psutil>=5.9.7",
-        "py-cpuinfo>=9.0.0",
-        "GPUtil>=1.4.0",
+        "psutil",
+        "py-cpuinfo",
+        "GPUtil",
     ],
 )
