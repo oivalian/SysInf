@@ -27,7 +27,7 @@ sysinf = sysinf.SysInf()
 ```
 
 
-**-- CPU Functions --**
+**-- CPU Methods --**
 
 Get CPU load with percentage as float
 ```
@@ -79,7 +79,7 @@ sysinf.cpuspeeds()
 ```
 
 
-**-- Memory Functions --**
+**-- Memory Methods --**
 
 Get total physical memory
 ```
@@ -109,7 +109,7 @@ Available memory: 25 GB
 ```
 
 
-**-- Drive Function --**
+**-- Drive Methods --**
 
 Get list of ALL connected drives and breakdown
 ```
@@ -127,7 +127,7 @@ D:/ (FAT32)
 ```
 
 
-**-- GPU Function --**
+**-- GPU Methods --**
 >[!WARNING]
 > The GPU functionality is only suitable for Nvidia GPUs. Check the GPUtil documentation for more information
 
@@ -150,7 +150,7 @@ Free: 5GB
 >No GPU will display a 'No GPU Detected' prompt
 
 
-**-- System Function --**
+**-- System Methods --**
 
 Get System Information
 ```
