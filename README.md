@@ -1,6 +1,6 @@
 # **SysInf**
 
-SysInf is a small package that simplfies system information into pre-defined strings.
+SysInf is a small module that simplfies system information into pre-defined strings.
 
 ___
 
@@ -22,7 +22,7 @@ Getting Started:
 # import module:
 import sysinf
 
-# Assign the function to a variable: 
+# Assign the class to a variable: 
 sysinf = sysinf.SysInf()
 ```
 
